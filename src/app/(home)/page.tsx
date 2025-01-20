@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           <div className="flex flex-1 flex-col justify-end">
             <TypeAnimation
-              splitter={(str) => splitter.splitGraphemes(str)}
+              splitter={(str: string) => splitter.splitGraphemes(str)}
               sequence={["Hello", 1000, "Ciao", 1000, "你好", 1000, "Здравейте", 1000, "Hola", 1000, "Bonjour", 1000, "नमस्ते", 1000]}
               style={{
                 fontSize: "2em",
